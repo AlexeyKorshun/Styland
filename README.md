@@ -1,6 +1,6 @@
-# Sample Zeplin Extension
+# Styland Zeplin Extension
 
-[Zeplin](https://zeplin.io) extension to export Android styles resource.
+[Zeplin](https://zeplin.io) extension to export Android styles resource with adapted fontFamily path.
 
 ## Getting started
 
