@@ -9,4 +9,6 @@ jobs:
       - name: test
         uses: actions/setup-node@master
       - run: npm install
+      - run: echo $GITHUB_REF
+      - run: sed -i '' 's/VERSION_VALUE/'$GITHUB_REF'/g' package.json
       - run: npm run exec
