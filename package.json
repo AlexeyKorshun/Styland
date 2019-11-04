@@ -1,0 +1,21 @@
+{
+  "name": "styland",
+  "version": "0.1.0",
+  "description": "Extension for ganarate right android style",
+  "scripts": {
+    "start": "zem start",
+    "build": "zem build",
+    "clean": "zem clean",
+    "exec": "zem exec",
+    "publish": "zem publish"
+  },
+  "zeplin": {
+    "displayName": "styland",
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "zem": "^0.4.4"
+  }
+}
