@@ -5,16 +5,8 @@ jobs:
     name: Exec
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Install npm
-      uses: actions/npm@master
-      with:
-        args: install
-    - name: Install zem
-      uses: actions/npm@master
-      with:
-        args: install -g zem
-    - name: Exec
-      uses: actions/npm@master
-      with:
-        args: run exec
+    - uses: actions/checkout@master
+    - name: test
+    - uses: actions/setup-node@master
+    - run: npm install
+    - run: npm run exec
