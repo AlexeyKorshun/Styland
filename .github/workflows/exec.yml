@@ -6,10 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: test
-        uses: actions/setup-node@master
+      - uses: actions/setup-node@master
       - run: npm install
       - run: echo $GITHUB_REF
-      - run: sed -i 's/VERSION_VALUE/0.1.1/' package.json
       - run: cat package.json
       - run: npm run exec
