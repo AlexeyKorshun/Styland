@@ -2,6 +2,10 @@
 
 [Zeplin](https://zeplin.io) extension to export Android styles resource with adapted fontFamily path.
 
+<p align="center">
+  <a href="https://github.com/actions/styland"><img alt="GitHub Actions status" src="https://github.com/AlexeyKorshun/Styland/workflows/Test%20extension/badge.svg"></a>
+</p>
+
 ## Getting started
 
 Add the extension to your project from extensions.zeplin.io.
