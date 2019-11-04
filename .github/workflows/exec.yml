@@ -10,5 +10,5 @@ jobs:
         uses: actions/setup-node@master
       - run: npm install
       - run: echo $GITHUB_REF
-      - run: sed -i 's/VERSION_VALUE/'$GITHUB_REF'/g' package.json
+      - run: sed -i 's/VERSION_VALUE/0.1.1/' package.json
       - run: npm run exec
