@@ -10,6 +10,8 @@ jobs:
     - uses: actions/checkout@master
     - run: npm install
     - run: npm run exec
+    - run: echo $GITHUB_REF
+    - run: sed -i '' 's/VERSION_VALUE/'$GITHUB_REF'/g' package.json
     - name: Publish
       uses: artemnovichkov/action-zem@master
       env:
