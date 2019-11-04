@@ -6,14 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Build
-      uses: actions/npm@master
-      with:
-        args: install
-    - name: Test
-      uses: actions/npm@master
-      with:
-        args: test
+    - run: npm install
+    - run: npm run exec
     - name: Publish
       uses: artemnovichkov/action-zem@master
       env:
